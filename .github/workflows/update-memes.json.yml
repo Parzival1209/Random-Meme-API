@@ -6,6 +6,8 @@ permissions:
 on:
   schedule:
     - cron: "0 */12 * * *"
+  push:
+    paths: "memes/**"
   workflow_dispatch:
 
 jobs:
