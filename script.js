@@ -9,16 +9,26 @@ function redditURL(url) {
 
 document.getElementById("memeForm").addEventListener("submit", async (e) => {
 	e.preventDefault();
-	const url = document.getElementById("memeUrl").value.trim();
+	let url = document.getElementById("memeUrl").value.trim();
 	const msg = document.getElementById("msg");
 
-	if (!redditURL(url)) {
-		if (!validMemeURL(url)) {
-			msg.textContent = "Invalid URL format. Must end in .png/.gif/.jpg/.jpeg/.webp";
-			msg.style.color = "red";
-			setTimeout(() => { msg.textContent = ""; }, 5000);
-			return;
-		}
+	if (redditURL(url)) {
+		const queryString = url.split("?")[1];
+        const params = {};
+        queryString.split("&").forEach(pair => {
+          const [key, value] = pair.split("=");
+          params[key] = value;
+        });
+        if (params.url) {
+          url = decodeURIComponent(params.url);
+        }
+	}
+	const tempUrl = url.split("?")[1];
+	if (!validMemeURL(tempUrl)) {
+		msg.textContent = "Invalid URL format. Must end in .png/.gif/.jpg/.jpeg/.webp";
+		msg.style.color = "red";
+		setTimeout(() => { msg.textContent = ""; }, 5000);
+		return;
 	}
 
 	let dots = "";
