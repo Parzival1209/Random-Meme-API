@@ -27,7 +27,7 @@ jobs:
       - name: Build memes.json
         run: |
           # 1. Build local file list as a JSON array of strings
-          ls memes | jq -R '. | "memes/" + .' | jq -s '.' > local.json
+          ls memes | jq -R '. | "https://raw.githubusercontent.com/Parzival1209/random-meme-api/refs/heads/main/memes/" + .' | jq -s '.' > local.json
 
           # 2. Extract "url" property from Google Sheet rows
           jq -r '.[].url' sheet.json | jq -R -s 'split("\n")[:-1]' > remote.json
