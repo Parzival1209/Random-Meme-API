@@ -27,8 +27,7 @@
     "height": 889
   },
   "https://blog.zegocloud.com/wp-content/uploads/2024/02/programming-meme-2.jpg": {
-    "width": 487,
-    "height": 600
+    "error": true
   },
   "https://null": {
     "error": true
