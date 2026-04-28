@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	          url = decodeURIComponent(params.url);
 	        }
 		}
-		const tempUrl = url.split("?")[1];
+		const tempUrl = url.split("?")[0];
 		if (!isValidUrl(tempUrl)) {
 			msg.textContent = "The URL format is invalid. URL must start in<br>https:// or http:// and end in .png, .gif, .jpg, .jpeg, or .webp";
 			msg.style.color = "red";
