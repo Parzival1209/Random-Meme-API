@@ -1,6 +1,6 @@
 This random meme API was primarily built for https://qwertyhu66.github.io/Useless-Web-Projects, a project I'm working on with a friend. <br>
-On the GitHub Pages website for this repository, you can find the actual URL for the random meme API and add, remove, and edit images in the database. <br>
-*Note that currently, the website and API only support adding images to the database.* <br>
+On the GitHub Pages website for this repository, you can find the actual URL for the random meme API and add, remove, and edit images in the database. Please understand that you can only do these actions through the website. <br>
+*Additionally, note that currently, the website only supports adding images to the database.* <br>
 <br>
 **Instructions on how to use the API**<br>
 Use a question mark (?) at the end of the API URL, followed by key-value pairs to set specific parameters. If you don't set any key-value pairs, the API will try to display a simple webpage that shows a single randomly chosen meme using **Google Apps Script HtmlService.** <br>
