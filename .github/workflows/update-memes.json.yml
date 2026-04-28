@@ -8,6 +8,8 @@ on:
     - cron: "0 */12 * * *"
   push:
     paths: "memes/**"
+  pull_request:
+    paths: "memes/**"
   workflow_dispatch:
 
 jobs:
