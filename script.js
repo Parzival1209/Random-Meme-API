@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
 		let url = document.getElementById("memeUrl").value.trim();
 		const msg = document.getElementById("msg");
 
-		if (meme.includes("drive.google.com")) {
+		if (url.includes("drive.google.com")) {
 	      console.log("Google Drive links are not direct image URLs.");
 	      return ContentService
 	        .createTextOutput("Google Drive links are not direct image URLs.")
