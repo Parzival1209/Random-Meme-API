@@ -11,8 +11,9 @@
     "width": 600,
     "height": 315
   },
-  "https://raw.githubusercontent.com/Parzival1209/random-meme-api/refs/heads/main/memes/Is this country Greenland%3F.webp": {
-    "error": true
+  "https://raw.githubusercontent.com/Parzival1209/random-meme-api/refs/heads/main/memes/Is this country Greenland.webp": {
+    "width": 1200,
+    "height": 670
   },
   "https://raw.githubusercontent.com/Parzival1209/random-meme-api/refs/heads/main/memes/Practice.png": {
     "width": 503,
