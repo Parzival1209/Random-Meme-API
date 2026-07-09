@@ -4,12 +4,10 @@
     "height": 311
   },
   "https://raw.githubusercontent.com/Parzival1209/random-meme-api/refs/heads/main/memes/How to offend eight groups of nerds...jpg": {
-    "width": 559,
-    "height": 559
+    "error": true
   },
   "https://raw.githubusercontent.com/Parzival1209/random-meme-api/refs/heads/main/memes/How to offend four groups of nerds...jpg": {
-    "width": 600,
-    "height": 315
+    "error": true
   },
   "https://raw.githubusercontent.com/Parzival1209/random-meme-api/refs/heads/main/memes/Is this country Greenland.webp": {
     "width": 1200,
@@ -20,8 +18,7 @@
     "height": 781
   },
   "https://raw.githubusercontent.com/Parzival1209/random-meme-api/refs/heads/main/memes/The guy learning Python:.jpg": {
-    "width": 489,
-    "height": 343
+    "error": true
   },
   "https://raw.githubusercontent.com/Parzival1209/random-meme-api/refs/heads/main/memes/Theory is when... Practice is when...webp": {
     "width": 720,
